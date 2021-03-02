@@ -1,0 +1,13 @@
+#navegador{position: fixed;
+top: 0px;
+left: 0px;
+width: 100%;
+background-color: aliceblue;}
+
+nav li{
+    background-color: #0174cf;
+    display: inline;
+
+}
+li:nth-child(2){background-color: #0844a4;}
+li:nth-child(4){background-color: #0844a4;}
