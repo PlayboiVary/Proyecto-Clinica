@@ -7,6 +7,7 @@ background-color: aliceblue;}
 nav li{
     background-color: #0174cf;
     display: inline;
+    color: white;
 
 }
 li:nth-child(2){background-color: #0844a4;}
