@@ -12,6 +12,7 @@ nav ul{
     padding: 0px;
 }
 nav li{
+    position: relative;
     background-color: #0174cf;
     display: inline;
     color: white;
@@ -20,11 +21,32 @@ nav li{
     transform: skewX(35deg);
 }
 nav li a{
+    
     display: inline-block;
     color: white;
     text-decoration: none;
     transform: skewX(-35deg);   
 }
 
-li:nth-child(2){background-color: #0844a4;}
-li:nth-child(4){background-color: #0844a4;}
+nav li:hover{
+    
+    animation-name: jump;
+    animation-duration: 800ms;
+    animation-fill-mode: forwards;
+}
+@keyframes jump{
+   0%{
+       bottom: 0px;
+       right: 0px;
+   }
+    
+    100%{
+        bottom: 10px;
+        right: 7px;
+        background-color: lightblue;
+    }
+
+}
+
+li:nth-child(odd){background-color: #0174cf;}
+li:nth-child(even){background-color: #0844a4;}
