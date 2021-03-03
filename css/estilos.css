@@ -8,7 +8,18 @@ nav li{
     background-color: #0174cf;
     display: inline;
     color: white;
-
+    padding: 10px 30px;
+    margin: 1px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+    
+}
+nav ul{
+    display: flex;
+    transform: skewX(35deg);
+    
 }
 li:nth-child(2){background-color: #0844a4;}
 li:nth-child(4){background-color: #0844a4;}
