@@ -36,13 +36,12 @@ nav li:hover{
 }
 @keyframes jump{
    0%{
-       bottom: 0px;
-       right: 0px;
+       transform: translate(0px, 0px );
+       
    }
     
     100%{
-        bottom: 10px;
-        right: 7px;
+        transform: translate(-7px, -10px );
         background-color: lightblue;
     }
 
