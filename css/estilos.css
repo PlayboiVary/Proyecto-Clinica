@@ -1,51 +1,68 @@
-#navegador{position: fixed;
-top: 0px;
-left: 0px;
-width: 100%;
-background-color: aliceblue;
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
 }
 
 
-nav ul{
+header{
+
+    border: 1px solid #eee;
+    background-color: rgb(255, 255, 255);
     display: flex;
-   list-style: none;
-    padding: 0px;
+    justify-content: space-between;
+    align-items: center;
 }
-nav li{
+
+header h1 {
+   
+    font-weight: bolder;
+    margin: 0px 2rem;
+    padding: 1.5rem;
+}
+
+header nav ul{
+    list-style: none;
+    padding: 0px;
+    display: flex;
+}
+header nav ul li{
     position: relative;
-    background-color: #0174cf;
+    margin: 0px;
     display: inline;
     color: white;
     padding: 10px 30px;
-    margin: 1px;
     transform: skewX(35deg);
 }
-nav li a{
-    
-    display: inline-block;
+
+header nav ul li a {
+   display: block;
+    font-weight: bolder;
     color: white;
     text-decoration: none;
-    transform: skewX(-35deg);   
+    text-align: center;
+    width: 100%;
+    padding: 0.7rem 2rem;
+    transition: background-color 1s ease;
+    transform: skewX(-35deg);
 }
-
-nav li:hover{
+header nav ul li:hover{
     
     animation-name: jump;
     animation-duration: 800ms;
     animation-fill-mode: forwards;
 }
+
 @keyframes jump{
-   0%{
-       transform: translate(0px, 0px );
-       
-   }
+  
     
     100%{
-        transform: translate(-7px, -10px );
+       
+        
         background-color: lightblue;
     }
 
 }
-
 li:nth-child(odd){background-color: #0174cf;}
 li:nth-child(even){background-color: #0844a4;}
+
